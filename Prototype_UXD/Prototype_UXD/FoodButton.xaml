@@ -1,0 +1,36 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Prototype_UXD.FoodButton"
+	x:Name="FoodButton1"
+	d:DesignWidth="640" d:DesignHeight="480" Width="231" Height="168">
+
+	<Grid x:Name="LayoutRoot">
+		<Rectangle x:Name="FoodPicture" HorizontalAlignment="Left" Height="169" Margin="0,0,-1.5,-1" Stroke="Black" VerticalAlignment="Top" Width="232.5">
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="image.jpg"/>
+			</Rectangle.Fill>
+		</Rectangle>
+		<Rectangle Fill="#FFF4F4F5" Stroke="Black" Margin="70.25,105.5,0,0"/>
+		<Grid x:Name="Select" Margin="146.083,138.083,0,0" MouseLeftButtonDown="Select_MouseLeftButtonDown">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="43*"/>
+				<ColumnDefinition Width="42*"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Rectangle x:Name="Select_rect" Fill="#FF04A829" Stroke="Black" Loaded="Confirm_Loaded" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+			<TextBlock x:Name="Select_txt" HorizontalAlignment="Left" Height="16.625" Margin="32.167,6.584,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="21.667" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Text="Välj"/><LineBreak/><Run/></TextBlock>
+		</Grid>
+		<Rectangle HorizontalAlignment="Left" Height="62.5" Margin="70.25,105.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="70.833">
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="Fairtrade.jpg"/>
+			</Rectangle.Fill>
+		</Rectangle>
+	</Grid>
+</UserControl>

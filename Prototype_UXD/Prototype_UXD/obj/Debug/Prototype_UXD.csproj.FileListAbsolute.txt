@@ -1,0 +1,21 @@
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\bin\Debug\Prototype_UXD.exe.config
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\bin\Debug\Prototype_UXD.exe
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\bin\Debug\Prototype_UXD.pdb
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\MainWindow.baml
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\App.baml
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\MainWindow.g.cs
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\App.g.cs
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Prototype_UXD_MarkupCompile.cache
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Prototype_UXD.g.resources
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Prototype_UXD.Properties.Resources.resources
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Prototype_UXD.csproj.GenerateResource.Cache
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Prototype_UXD.exe
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Prototype_UXD.pdb
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\FoodButton.baml
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\FoodButton.g.cs
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Prototype_UXD_MarkupCompile.lref
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Prototype_UXD.csprojResolveAssemblyReference.cache
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\obj\Debug\Simple Styles.baml
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\bin\Debug\LaxOPotatis.jpg
+C:\Users\Cellmon95\Documents\Skola\User Experience Design\Prototype_UXD\Prototype_UXD\bin\Debug\KycklingOCurry.jpg
