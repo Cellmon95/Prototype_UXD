@@ -15,22 +15,22 @@
                     <ImageBrush ImageSource="pack://siteoforigin:,,,/LaxOPotatis.jpg"/>
                 </local:FoodButton.Picture>
             </local:FoodButton>
-            <local:FoodButton x:Name="Sallad" HorizontalAlignment="Left" Height="168" Margin="35,240.5,0,0" VerticalAlignment="Top" Width="235">
+            <local:FoodButton x:Name="Sallad" HorizontalAlignment="Left" Height="168" Margin="35,244.5,0,0" VerticalAlignment="Top" Width="235">
                 <local:FoodButton.Picture>
                     <ImageBrush ImageSource="Sallad.jpg"/>
                 </local:FoodButton.Picture>
             </local:FoodButton>
-            <local:FoodButton x:Name="GlutenfrittBrod" HorizontalAlignment="Left" Height="168" Margin="284,240.5,0,0" VerticalAlignment="Top" Width="235">
+            <local:FoodButton x:Name="GlutenfrittBrod" HorizontalAlignment="Left" Height="168" Margin="284,244.5,0,0" VerticalAlignment="Top" Width="235">
                 <local:FoodButton.Picture>
                     <ImageBrush ImageSource="GlutenfrittBrödd.jpg"/>
                 </local:FoodButton.Picture>
             </local:FoodButton>
-            <local:FoodButton x:Name="KycklingOCurry" HorizontalAlignment="Left" Height="168" Margin="35,434,0,0" VerticalAlignment="Top" Width="235">
+            <local:FoodButton x:Name="KycklingOCurry" HorizontalAlignment="Left" Height="168" Margin="35,438,0,0" VerticalAlignment="Top" Width="235">
                 <local:FoodButton.Picture>
                     <ImageBrush ImageSource="pack://siteoforigin:,,,/KycklingOCurry.jpg"/>
                 </local:FoodButton.Picture>
             </local:FoodButton>
-            <local:FoodButton x:Name="GottOBlandat" HorizontalAlignment="Left" Height="168" Margin="284,434,0,0" VerticalAlignment="Top" Width="235">
+            <local:FoodButton x:Name="GottOBlandat" HorizontalAlignment="Left" Height="168" Margin="284,438,0,0" VerticalAlignment="Top" Width="235">
                 <local:FoodButton.Picture>
                     <ImageBrush ImageSource="GottOBlandat.jpg"/>
                 </local:FoodButton.Picture>
@@ -42,11 +42,14 @@
                     <ImageBrush ImageSource="image.jpg"/>
                 </Rectangle.Fill>
             </Rectangle>
-            <ScrollViewer Margin="0,258.5,0,137">
-                <TextBox x:Name="Description_txtb" Height="265.75" TextWrapping="Wrap" Width="553" Text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula vehicula quam, eget semper lectus tincidunt ac. Nunc ac nibh congue, auctor magna ut, ullamcorper tellus. Morbi sed enim non nulla mollis gravida commodo ac augue. Duis pellentesque ipsum et tellus aliquam, vehicula suscipit nisi hendrerit. Sed diam lacus, consequat sit amet venenatis et, vestibulum in lorem. Proin fringilla vulputate lorem. Cras euismod elit at maximus suscipit. Phasellus aliquam nibh velit, eget tristique turpis fringilla a. Nam et ante a felis mattis luctus. Nunc eleifend porta vestibulum. Ut risus sapien, lobortis et molestie quis, scelerisque at ipsum. In ac ultrices purus. Proin malesuada erat vel sapien tincidunt, sed vestibulum mauris lobortis."/>
-            </ScrollViewer>
+            <ScrollViewer Margin="0,258.5,0,233">
+				
+				<TextBlock><InlineUIContainer>
+						<TextBlock FontWeight="Bold" FontSize="16"><Run Text="Varning! Inehåller: Lorem ipsum dolor sit amet"/></TextBlock>
+					</InlineUIContainer><LineBreak/><LineBreak/><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dignissim ex. Aliquam faucibus vel"/><LineBreak/><Run Text="diam quis semper. In hac habitasse platea dictumst. Nullam urna odio, congue eget urna vel, gravida"/><LineBreak/><Run Text="luctus lorem. Nunc pulvinar pharetra libero, viverra laoreet felis suscipit eu. Suspendisse laoreet "/><LineBreak/><Run Text="metus ut tellus molestie accumsan. Ut malesuada nisi lorem, et ultrices arcu euismod id. In placerat "/><LineBreak/><Run Text="neque id turpis hendrerit vestibulum. Suspendisse finibus eros in purus pellentesque, id venenatis mi "/><LineBreak/><Run Text="tincidunt. Vestibulum rhoncus lectus non odio ullamcorper accumsan. Aliquam erat volutpat. Cum"/><LineBreak/><Run Text="sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla malesuada "/><LineBreak/><Run Text="vestibulum mauris, in elementum metus accumsan sed. "/><LineBreak/><Run/></TextBlock>
+			</ScrollViewer>
             <TextBlock x:Name="FoodName_txb" HorizontalAlignment="Left" Height="78" Margin="311,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" TextAlignment="Center" FontSize="26.667"><Run Text="Köttbullar Och Potatismos"/><LineBreak/><Run/></TextBlock>
-            <Grid x:Name="Back" Margin="284,593.5,167,10" MouseLeftButtonDown="Back_MouseLeftButtonDown">
+            <Grid x:Name="Back" Margin="274,497.5,177,106" MouseLeftButtonDown="Back_MouseLeftButtonDown">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30*"/>
                     <RowDefinition Height="31*"/>
@@ -59,7 +62,7 @@
                 <Rectangle x:Name="Back_btn" Fill="#FFEA0202" HorizontalAlignment="Left" Height="60.5" Stroke="Black" VerticalAlignment="Top" Width="102" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <TextBlock x:Name="Back_txtb" HorizontalAlignment="Left" Margin="10.326,13.829,0,0" TextWrapping="Wrap" Text="Tillbaka" VerticalAlignment="Top" FontSize="24" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
             </Grid>
-            <Grid x:Name="Select" Margin="413,593.5,10,10" MouseLeftButtonDown="Select_MouseLeftButtonDown">
+            <Grid x:Name="Select" Margin="403,497.5,20,106" MouseLeftButtonDown="Select_MouseLeftButtonDown">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="31*"/>
                     <RowDefinition Height="30*"/>
@@ -71,7 +74,7 @@
                 <Rectangle x:Name="Select_btn" Fill="#FF0ED80E" HorizontalAlignment="Left" Height="60.5" Stroke="Black" VerticalAlignment="Top" Width="130" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
                 <TextBlock x:Name="Select_txtb" HorizontalAlignment="Left" Margin="45.787,14.787,0,0" TextWrapping="Wrap" Text="Välj" VerticalAlignment="Top" FontSize="24" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
             </Grid>
-            <Rectangle HorizontalAlignment="Left" Height="122" Margin="10,532,0,0" Stroke="Black" VerticalAlignment="Top" Width="135.333">
+            <Rectangle HorizontalAlignment="Left" Height="122" Margin="0,436,0,0" Stroke="Black" VerticalAlignment="Top" Width="135.333">
             	<Rectangle.Fill>
             		<ImageBrush ImageSource="Fairtrade.jpg"/>
             	</Rectangle.Fill>

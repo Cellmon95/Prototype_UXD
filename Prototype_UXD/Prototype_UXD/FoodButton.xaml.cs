@@ -43,7 +43,59 @@ namespace Prototype_UXD
 			}
 		}
 
-		public String FoodName { get; set; }
+		public String FoodName 
+		{
+			get
+			{
+				return FoodName_txtb.Text;
+			}
+
+			set
+			{
+				FoodName_txtb.Text = value;
+			}
+		}
+		public String FoodType
+		{
+			get
+			{
+				return LabelText_txtb.Text;
+			}
+			set
+			{
+				BrushConverter bc = new BrushConverter();
+				switch (value)
+				{
+					case "KÖTT":
+						LabelText_txtb.Text = value;
+						BackgroundLabel_rect.Fill = (Brush)bc.ConvertFrom("Red");
+						break;
+					case "FISK":
+						LabelText_txtb.Text = value;
+						BackgroundLabel_rect.Fill = (Brush)bc.ConvertFrom("Blue");
+						break;
+					case "VEGETARISKT":
+						LabelText_txtb.Text = value;
+						BackgroundLabel_rect.Fill = (Brush)bc.ConvertFrom("Green");
+						break;
+					case "GLUTENFRITT":
+						LabelText_txtb.Text = value;
+						BackgroundLabel_rect.Fill = (Brush)bc.ConvertFrom("Yellow");
+						break;
+					case "KYCKLING":
+						LabelText_txtb.Text = value;
+						BackgroundLabel_rect.Fill = (Brush)bc.ConvertFrom("Purple");
+						break;
+					case "SNACKS":
+						LabelText_txtb.Text = value;
+						BackgroundLabel_rect.Fill = (Brush)bc.ConvertFrom("#555555");
+						break;
+					default:
+						throw new Exception();
+						break;
+				}
+			}
+		}
 
 		private void Select_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 		{

@@ -28,7 +28,6 @@ namespace Prototype_UXD
 
         public MainWindow()
         {
-
             InitializeComponent();
 			firstPage.Visibility = Visibility.Visible;
 			secondPage.Visibility = Visibility.Collapsed;
@@ -36,13 +35,17 @@ namespace Prototype_UXD
 			fourthPage.Visibility = Visibility.Collapsed;
 
 			KottbullarOPotatismos.FoodName = "Köttbullar och potatis";
+			KottbullarOPotatismos.FoodType = "KÖTT";
 			LaxOPotatis.FoodName = "Lax och potatis";
+			LaxOPotatis.FoodType = "FISK";
 			Sallad.FoodName = "Sallad";
+			Sallad.FoodType = "VEGETARISKT";
 			GlutenfrittBrod.FoodName = "Glutenfritt Bröd";
+			GlutenfrittBrod.FoodType = "GLUTENFRITT";
 			KycklingOCurry.FoodName = "Kyckling Och Curry";
+			KycklingOCurry.FoodType = "KYCKLING";
 			GottOBlandat.FoodName = "Gott Och Blandat";
-
-			Description_txtb.IsReadOnly = true;
+			GottOBlandat.FoodType = "SNACKS";
         }
 
 		public void changeLayout(Layouts layout)
