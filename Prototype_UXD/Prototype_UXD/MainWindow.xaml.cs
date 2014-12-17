@@ -94,11 +94,19 @@ namespace Prototype_UXD
 			secondPage.Visibility = Visibility.Visible;
 		}
 
-		private void Select_rect_third1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+		private void SelectSnacks_rect1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 		{
 			SnacksPage.Visibility = Visibility.Collapsed;
 			fourthPage.Visibility = Visibility.Visible;
 		}
+
+		private void BackSnacks_rect1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+		{
+			SnacksPage.Visibility = Visibility.Collapsed;
+			firstPage.Visibility = Visibility.Visible;
+		}
+
+
 
 		//public Brush Picture
 		//{

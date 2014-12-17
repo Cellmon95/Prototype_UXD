@@ -45,7 +45,7 @@
             <ScrollViewer Margin="0,258.5,0,233">
 				
 				<TextBlock><InlineUIContainer>
-						<TextBlock FontWeight="Bold" FontSize="16"><Run Text="Varning! Inehåller: Lorem ipsum dolor sit amet"/></TextBlock>
+						<TextBlock FontWeight="Bold" FontSize="16"><Run Text="Varning! "/><Run Text="I"/><Run Text="nnehåller: Lorem ipsum dolor sit amet"/></TextBlock>
 					</InlineUIContainer><LineBreak/><LineBreak/><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dignissim ex. Aliquam faucibus vel"/><LineBreak/><Run Text="diam quis semper. In hac habitasse platea dictumst. Nullam urna odio, congue eget urna vel, gravida"/><LineBreak/><Run Text="luctus lorem. Nunc pulvinar pharetra libero, viverra laoreet felis suscipit eu. Suspendisse laoreet "/><LineBreak/><Run Text="metus ut tellus molestie accumsan. Ut malesuada nisi lorem, et ultrices arcu euismod id. In placerat "/><LineBreak/><Run Text="neque id turpis hendrerit vestibulum. Suspendisse finibus eros in purus pellentesque, id venenatis mi "/><LineBreak/><Run Text="tincidunt. Vestibulum rhoncus lectus non odio ullamcorper accumsan. Aliquam erat volutpat. Cum"/><LineBreak/><Run Text="sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla malesuada "/><LineBreak/><Run Text="vestibulum mauris, in elementum metus accumsan sed. "/><LineBreak/><Run/></TextBlock>
 			</ScrollViewer>
             <TextBlock x:Name="FoodName_txb" HorizontalAlignment="Left" Height="78" Margin="311,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" TextAlignment="Center" FontSize="26.667"><Run Text="Köttbullar Och Potatismos"/><LineBreak/><Run/></TextBlock>
@@ -82,7 +82,7 @@
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="378,153,0,0" TextWrapping="Wrap" Text="70kr" VerticalAlignment="Top" FontSize="29.333"/>
         </Grid>
-        <Grid x:Name="thirdPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553">
+        <Grid x:Name="thirdPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
             <RadioButton Content="Vatten - 5kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,181.84,0,0" FontSize="26.667"/>
             <RadioButton Content="Kaffe - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,222.31,0,0" FontSize="26.667"/>
             <RadioButton Content="Julmust - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,262.78,0,0" FontSize="26.667"/>
@@ -123,7 +123,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="155,181,0,0" TextWrapping="Wrap" Text="Tack För Ditt Köp!" VerticalAlignment="Top" FontSize="29.333"/>
             <TextBlock HorizontalAlignment="Left" Margin="141.143,306.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667"><Run Text="Du "/><Run Text="blir "/><Run Text="Debitera"/><Run Text="d"/><Run Text=" "/><Run Text="X "/><Run Text="kr"/><LineBreak/><Run/></TextBlock>
         </Grid>
-        <Grid x:Name="SnacksPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
+        <Grid x:Name="SnacksPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553">
         	<RadioButton Content="Mars - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36.34,181.84,0,0" FontSize="26.667"/>
         	<RadioButton Content="Chips - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36.34,222.31,0,0" FontSize="26.667"/>
         	<RadioButton Content="M&amp;M - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36.34,262.78,0,0" FontSize="26.667"/>
@@ -134,8 +134,8 @@
         	<RadioButton Content="Risifrutti - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308.5,262.78,0,0" FontSize="26.667"/>
         	<RadioButton Content="Juleskum - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308.5,222.31,0,0" FontSize="26.667"/>
         	<RadioButton Content="Plopp - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308.5,181.84,0,0" FontSize="26.667"/>
-        	<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,64.246,0,0" FontSize="32"><Run Text="Snacks"/><LineBreak/><Run/></TextBlock>
-        	<Grid x:Name="Select_rect1" Margin="305,461.5,122.703,151.5" MouseLeftButtonDown="Select_rect_MouseLeftButtonDown">
+        	<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="218,64.246,0,0" FontSize="32"><Run Text="Snacks"/><LineBreak/><Run/></TextBlock>
+        	<Grid x:Name="SelectSnacks_rect1" Margin="305,461.5,122.703,151.5" MouseLeftButtonDown="SelectSnacks_rect1_MouseLeftButtonDown" >
         		<Grid.RowDefinitions>
         			<RowDefinition Height="25*"/>
         			<RowDefinition Height="26*"/>
@@ -144,10 +144,10 @@
         			<ColumnDefinition/>
         			<ColumnDefinition/>
         		</Grid.ColumnDefinitions>
-        		<Rectangle x:Name="Select_rect_third1" Fill="#FF09E813" Height="51" Stroke="Black" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" MouseLeftButtonDown="Select_rect_third1_MouseLeftButtonDown"/>
+        		<Rectangle x:Name="Select_rect_third1" Fill="#FF09E813" Height="51" Stroke="Black" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         		<TextBlock x:Name="Select_third_txtb1" HorizontalAlignment="Left" Margin="42.751,9.076,0,0" TextWrapping="Wrap" Text="Välj" VerticalAlignment="Top" Grid.RowSpan="2" Grid.ColumnSpan="2" FontSize="24"/>
         	</Grid>
-        	<Grid x:Name="Back_rect1" Margin="105.5,461.5,322.203,151.5" MouseLeftButtonDown="Back_rect_MouseLeftButtonDown">
+        	<Grid x:Name="BackSnacks_rect1" Margin="105.5,461.5,322.203,151.5" MouseLeftButtonDown="BackSnacks_rect1_MouseLeftButtonDown" >
         		<Grid.RowDefinitions>
         			<RowDefinition/>
         			<RowDefinition/>
