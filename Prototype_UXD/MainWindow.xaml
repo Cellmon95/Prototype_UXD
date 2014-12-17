@@ -36,7 +36,7 @@
                 </local:FoodButton.Picture>
             </local:FoodButton>
         </Grid>
-        <Grid x:Name="secondPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
+        <Grid x:Name="secondPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553">
             <Rectangle x:Name="FoodPicture" HorizontalAlignment="Left" Height="195" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="262">
                 <Rectangle.Fill>
                     <ImageBrush ImageSource="image.jpg"/>
@@ -74,13 +74,18 @@
                 <Rectangle x:Name="Select_btn" Fill="#FF0ED80E" HorizontalAlignment="Left" Height="60.5" Stroke="Black" VerticalAlignment="Top" Width="130" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
                 <TextBlock x:Name="Select_txtb" HorizontalAlignment="Left" Margin="45.787,14.787,0,0" TextWrapping="Wrap" Text="Välj" VerticalAlignment="Top" FontSize="24" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
             </Grid>
-            <Rectangle HorizontalAlignment="Left" Height="122" Margin="0,436,0,0" Stroke="Black" VerticalAlignment="Top" Width="135.333">
+            <Rectangle HorizontalAlignment="Left" Height="122" Margin="0,448,0,0" Stroke="Black" VerticalAlignment="Top" Width="135.333">
             	<Rectangle.Fill>
             		<ImageBrush ImageSource="Fairtrade.jpg"/>
             	</Rectangle.Fill>
             </Rectangle>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="378,153,0,0" TextWrapping="Wrap" Text="70kr" VerticalAlignment="Top" FontSize="29.333"/>
+            <Rectangle HorizontalAlignment="Left" Height="122" Margin="135.333,448,0,0" Stroke="Black" VerticalAlignment="Top" Width="133.667">
+            	<Rectangle.Fill>
+            		<ImageBrush ImageSource="Krav.jpg"/>
+            	</Rectangle.Fill>
+            </Rectangle>
         </Grid>
         <Grid x:Name="thirdPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
             <RadioButton Content="Vatten - 5kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,181.84,0,0" FontSize="26.667"/>
@@ -118,6 +123,7 @@
                 <Rectangle x:Name="Back_third" Fill="#FFEA0202" HorizontalAlignment="Left" Height="51" Stroke="Black" VerticalAlignment="Top" Width="125.297" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
                 <TextBlock HorizontalAlignment="Left" Margin="26.248,13.833,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23.167" Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="21.333" Width="72.799"><Run Text="Tillbaka"/><LineBreak/><Run/></TextBlock>
             </Grid>
+            <RadioButton Content="Ingen" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,384.19,0,0" FontSize="26.667"/>
         </Grid>
         <Grid x:Name="fourthPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
             <TextBlock HorizontalAlignment="Left" Margin="155,181,0,0" TextWrapping="Wrap" Text="Tack För Ditt Köp!" VerticalAlignment="Top" FontSize="29.333"/>
@@ -190,7 +196,7 @@
         	</Grid>
         	<TextBlock HorizontalAlignment="Left" Margin="156.5,170.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"><Run Text="Att betala:"/><LineBreak/><Run Text="     "/><Run Text="X kr"/></TextBlock>
         </Grid>
-        <Grid x:Name="BuyDeclinedPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553">
+        <Grid x:Name="BuyDeclinedPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
         	<TextBlock HorizontalAlignment="Left" Margin="113,239.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="337"><Run Text="Köp"/><Run Text=" Av"/><Run Text="b"/><Run Text="ruttet"/><Run Text="!"/><LineBreak/><Run/></TextBlock>
         </Grid>
     </Grid>

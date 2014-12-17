@@ -39,7 +39,7 @@ namespace Prototype_UXD
 			PayPage.Visibility = Visibility.Collapsed;
 			BuyDeclinedPage.Visibility = Visibility.Collapsed;
 
-			KottbullarOPotatismos.FoodName = "Köttbullar och potatis";
+			KottbullarOPotatismos.FoodName = "Köttbullar och mos";
 			KottbullarOPotatismos.FoodType = "KÖTT";
 			LaxOPotatis.FoodName = "Lax och potatis";
 			LaxOPotatis.FoodType = "FISK";

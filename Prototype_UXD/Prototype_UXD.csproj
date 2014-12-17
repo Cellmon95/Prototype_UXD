@@ -120,6 +120,7 @@
     <Resource Include="GlutenfrittBrödd.jpg" />
     <Resource Include="GottOBlandat.jpg" />
     <Resource Include="image.jpg" />
+    <Resource Include="Krav.jpg" />
     <Resource Include="Sallad.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

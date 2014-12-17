@@ -34,14 +34,19 @@
 				<RowDefinition/>
 				<RowDefinition/>
 			</Grid.RowDefinitions>
-			<Rectangle x:Name="Select_rect" Fill="#FF04A829" Stroke="Black" Loaded="Confirm_Loaded" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="-2.75,0,2.75,0"/>
+			<Rectangle x:Name="Select_rect" Fill="#FF04A829" Stroke="Black" Loaded="Confirm_Loaded" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="-1,0,1,0"/>
 			<TextBlock x:Name="Select_txt" HorizontalAlignment="Left" Height="16.625" Margin="32.167,6.584,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="21.667" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Text="Välj"/><LineBreak/><Run/></TextBlock>
 		</Grid>
-		<Rectangle HorizontalAlignment="Left" Height="62.5" Margin="52.747,105.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="69.789" Grid.Column="1">
+		<Rectangle HorizontalAlignment="Left" Height="34" Margin="52.5,128.833,0,0" Stroke="Black" VerticalAlignment="Top" Width="37.966" Grid.Column="1">
 			<Rectangle.Fill>
 				<ImageBrush ImageSource="Fairtrade.jpg"/>
 			</Rectangle.Fill>
 		</Rectangle>
-		<TextBlock x:Name="FoodName_txtb" HorizontalAlignment="Left" Margin="125,111.969,-6.665,0" TextWrapping="Wrap" Text="Köttbullar och Mos" VerticalAlignment="Top" FontSize="9.333" Grid.Column="1" Height="15.947" Width="94.743"/>
+		<TextBlock x:Name="FoodName_txtb" HorizontalAlignment="Left" Margin="115.637,111.969,0,0" TextWrapping="Wrap" Text="Köttbullar och Mos" VerticalAlignment="Top" FontSize="9.333" Grid.Column="1" Height="15.947" Width="94.743"/>
+		<Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="90.466,128.833,0,0" Stroke="Black" VerticalAlignment="Top" Width="34.534">
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="Krav.jpg"/>
+			</Rectangle.Fill>
+		</Rectangle>
 	</Grid>
 </UserControl>
