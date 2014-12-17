@@ -89,6 +89,7 @@ namespace Prototype_UXD
 					case "SNACKS":
 						LabelText_txtb.Text = value;
 						BackgroundLabel_rect.Fill = (Brush)bc.ConvertFrom("#555555");
+						IsSnacks = true;
 						break;
 					default:
 						throw new Exception();
@@ -97,11 +98,20 @@ namespace Prototype_UXD
 			}
 		}
 
+		public bool IsSnacks { get; set; }
+
 		private void Select_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 		{
-			mainWindow.changeLayout(MainWindow.Layouts.secondPage);
-			mainWindow.FoodPicture.Fill = FoodPicture.Fill;
-			mainWindow.FoodName_txb.Text = FoodName;
+			if (IsSnacks)
+			{
+				mainWindow.changeLayout(MainWindow.Layouts.snacksPage);
+			}
+			else
+			{
+				mainWindow.changeLayout(MainWindow.Layouts.secondPage);
+				mainWindow.FoodPicture.Fill = FoodPicture.Fill;
+				mainWindow.FoodName_txb.Text = FoodName;
+			}
 		}
 	}
 }

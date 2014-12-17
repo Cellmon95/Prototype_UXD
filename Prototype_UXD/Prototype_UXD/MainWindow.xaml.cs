@@ -23,7 +23,8 @@ namespace Prototype_UXD
 		public enum Layouts
 		{
 			firstPage,
-			secondPage
+			secondPage, 
+			snacksPage
 		}
 
         public MainWindow()
@@ -33,6 +34,7 @@ namespace Prototype_UXD
 			secondPage.Visibility = Visibility.Collapsed;
 			thirdPage.Visibility = Visibility.Collapsed;
 			fourthPage.Visibility = Visibility.Collapsed;
+			SnacksPage.Visibility = Visibility.Collapsed;
 
 			KottbullarOPotatismos.FoodName = "Köttbullar och potatis";
 			KottbullarOPotatismos.FoodType = "KÖTT";
@@ -58,6 +60,10 @@ namespace Prototype_UXD
 				case Layouts.secondPage:
 					firstPage.Visibility = Visibility.Collapsed;
 					secondPage.Visibility = Visibility.Visible;
+					break;
+				case Layouts.snacksPage:
+					firstPage.Visibility = Visibility.Collapsed;
+					SnacksPage.Visibility = Visibility.Visible;
 					break;
 				default:
 					break;
@@ -86,6 +92,12 @@ namespace Prototype_UXD
 		{
 			thirdPage.Visibility = Visibility.Collapsed;
 			secondPage.Visibility = Visibility.Visible;
+		}
+
+		private void Select_rect_third1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+		{
+			SnacksPage.Visibility = Visibility.Collapsed;
+			fourthPage.Visibility = Visibility.Visible;
 		}
 
 		//public Brush Picture

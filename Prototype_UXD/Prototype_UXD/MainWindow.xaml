@@ -36,7 +36,7 @@
                 </local:FoodButton.Picture>
             </local:FoodButton>
         </Grid>
-        <Grid x:Name="secondPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553">
+        <Grid x:Name="secondPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
             <Rectangle x:Name="FoodPicture" HorizontalAlignment="Left" Height="195" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="262">
                 <Rectangle.Fill>
                     <ImageBrush ImageSource="image.jpg"/>
@@ -79,18 +79,20 @@
             		<ImageBrush ImageSource="Fairtrade.jpg"/>
             	</Rectangle.Fill>
             </Rectangle>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="378,153,0,0" TextWrapping="Wrap" Text="70kr" VerticalAlignment="Top" FontSize="29.333"/>
         </Grid>
-        <Grid x:Name="thirdPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
-            <RadioButton Content="Vatten" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74.5,181.84,0,0" FontSize="26.667"/>
-            <RadioButton Content="Kaffe" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74.5,222.31,0,0" FontSize="26.667"/>
-            <RadioButton Content="Julmust" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74.5,262.78,0,0" FontSize="26.667"/>
-            <RadioButton Content="Påskmust" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74.5,303.25,0,0" FontSize="26.667"/>
-            <RadioButton Content="Mustmust/cola" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74.5,343.72,0,0" FontSize="26.667"/>
-            <RadioButton Content="Mjölk" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,343.72,0,0" FontSize="26.667"/>
-            <RadioButton Content="Trocadero" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,303.25,0,0" FontSize="26.667"/>
-            <RadioButton Content="Sprite" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,262.78,0,0" FontSize="26.667"/>
-            <RadioButton Content="Fantamust" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,222.31,0,0" FontSize="26.667"/>
-            <RadioButton Content="Fanta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,181.84,0,0" FontSize="26.667"/>
+        <Grid x:Name="thirdPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553">
+            <RadioButton Content="Vatten - 5kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,181.84,0,0" FontSize="26.667"/>
+            <RadioButton Content="Kaffe - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,222.31,0,0" FontSize="26.667"/>
+            <RadioButton Content="Julmust - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,262.78,0,0" FontSize="26.667"/>
+            <RadioButton Content="Påskmust - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,303.25,0,0" FontSize="26.667"/>
+            <RadioButton Content="Mustmust/cola - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22.38,343.72,0,0" FontSize="26.667"/>
+            <RadioButton Content="Mjölk - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,343.72,0,0" FontSize="26.667"/>
+            <RadioButton Content="Trocadero - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,303.25,0,0" FontSize="26.667"/>
+            <RadioButton Content="Sprite - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,262.78,0,0" FontSize="26.667"/>
+            <RadioButton Content="Fantamust - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,222.31,0,0" FontSize="26.667"/>
+            <RadioButton Content="Fanta - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,181.84,0,0" FontSize="26.667"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Drycker" VerticalAlignment="Top" Margin="200,64.246,0,0" FontSize="32"/>
             <Grid x:Name="Select_rect" Margin="305,461.5,122.703,151.5" MouseLeftButtonDown="Select_rect_MouseLeftButtonDown">
                 <Grid.RowDefinitions>
@@ -119,7 +121,44 @@
         </Grid>
         <Grid x:Name="fourthPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
             <TextBlock HorizontalAlignment="Left" Margin="155,181,0,0" TextWrapping="Wrap" Text="Tack För Ditt Köp!" VerticalAlignment="Top" FontSize="29.333"/>
-            <TextBlock HorizontalAlignment="Left" Margin="124.5,298.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667"><Run Text="Du "/><Run Text="blir "/><Run Text="Debitera"/><Run Text="d"/><Run Text=" 1 000"/><Run Text=" kr"/><LineBreak/><Run/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="141.143,306.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667"><Run Text="Du "/><Run Text="blir "/><Run Text="Debitera"/><Run Text="d"/><Run Text=" "/><Run Text="X "/><Run Text="kr"/><LineBreak/><Run/></TextBlock>
+        </Grid>
+        <Grid x:Name="SnacksPage" HorizontalAlignment="Left" Height="664" VerticalAlignment="Top" Width="553" d:IsHidden="True">
+        	<RadioButton Content="Mars - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36.34,181.84,0,0" FontSize="26.667"/>
+        	<RadioButton Content="Chips - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36.34,222.31,0,0" FontSize="26.667"/>
+        	<RadioButton Content="M&amp;M - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36.34,262.78,0,0" FontSize="26.667"/>
+        	<RadioButton Content="Kitt Katt - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36.34,303.25,0,0" FontSize="26.667"/>
+        	<RadioButton Content="Hockey Pulver - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36.34,343.72,0,0" FontSize="26.667"/>
+        	<RadioButton Content="Kexchocklad - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308.5,343.72,0,0" FontSize="26.667"/>
+        	<RadioButton Content="Djungelvrål - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308.5,303.25,0,0" FontSize="26.667"/>
+        	<RadioButton Content="Risifrutti - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308.5,262.78,0,0" FontSize="26.667"/>
+        	<RadioButton Content="Juleskum - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308.5,222.31,0,0" FontSize="26.667"/>
+        	<RadioButton Content="Plopp - 10kr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308.5,181.84,0,0" FontSize="26.667"/>
+        	<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,64.246,0,0" FontSize="32"><Run Text="Snacks"/><LineBreak/><Run/></TextBlock>
+        	<Grid x:Name="Select_rect1" Margin="305,461.5,122.703,151.5" MouseLeftButtonDown="Select_rect_MouseLeftButtonDown">
+        		<Grid.RowDefinitions>
+        			<RowDefinition Height="25*"/>
+        			<RowDefinition Height="26*"/>
+        		</Grid.RowDefinitions>
+        		<Grid.ColumnDefinitions>
+        			<ColumnDefinition/>
+        			<ColumnDefinition/>
+        		</Grid.ColumnDefinitions>
+        		<Rectangle x:Name="Select_rect_third1" Fill="#FF09E813" Height="51" Stroke="Black" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" MouseLeftButtonDown="Select_rect_third1_MouseLeftButtonDown"/>
+        		<TextBlock x:Name="Select_third_txtb1" HorizontalAlignment="Left" Margin="42.751,9.076,0,0" TextWrapping="Wrap" Text="Välj" VerticalAlignment="Top" Grid.RowSpan="2" Grid.ColumnSpan="2" FontSize="24"/>
+        	</Grid>
+        	<Grid x:Name="Back_rect1" Margin="105.5,461.5,322.203,151.5" MouseLeftButtonDown="Back_rect_MouseLeftButtonDown">
+        		<Grid.RowDefinitions>
+        			<RowDefinition/>
+        			<RowDefinition/>
+        		</Grid.RowDefinitions>
+        		<Grid.ColumnDefinitions>
+        			<ColumnDefinition/>
+        			<ColumnDefinition/>
+        		</Grid.ColumnDefinitions>
+        		<Rectangle x:Name="Back_third1" Fill="#FFEA0202" HorizontalAlignment="Left" Height="51" Stroke="Black" VerticalAlignment="Top" Width="125.297" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        		<TextBlock HorizontalAlignment="Left" Margin="26.248,13.833,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23.167" Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="21.333" Width="72.799"><Run Text="Tillbaka"/><LineBreak/><Run/></TextBlock>
+        	</Grid>
         </Grid>
     </Grid>
 </Window>
